@@ -1,0 +1,147 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: black url("../images/memphis-colorful.png") repeat;
+  color: #777777;
+  margin-bottom: 80px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  color: #4aaaa5;
+}
+p, li, a, figcaption, label, input[placeholder] {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.navbar {
+  height:auto;
+}
+.navbar-static-top {
+  background: #fff;
+  border-bottom: #cccccc solid 2px;
+}
+.navbar-header {
+  background: #4aaaa5;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 30px;
+  height:auto;
+  line-height:normal;
+  width:100%;
+  text-align: center;
+}
+.navbar-nav li a {
+ line-height: 40px;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color:#fff;
+    background-color: #4aaaa5;
+}
+h1 {
+  margin:0;
+  padding:0;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+p {
+  font-size: 14px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  padding:0 15px;
+}
+/*This to fix the line-height causing the first line to be aligned below the image*/
+hr {
+  margin: 20px 0;
+}
+.section {
+  background: #fff;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+/*class name could be better... for "name logo"*/
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #dddddd;
+  box-sizing:  border-box;
+}
+input[type="submit"] {
+  margin:0;
+  margin-top: -15px;
+  width: auto;
+  background: #4aaaa5;
+  padding:10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  border:none;
+  cursor: pointer;
+}
+/*Position needs to be relative to figcaption can be absolute*/
+figure {
+  position: relative;
+  margin-bottom: 40px;
+}
+figcaption {
+  background: #4aaaa5;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+figcaption h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 0;
+}
+/*only applied to one element to give proper spacing for the 3 social icons*/
+.footer {
+  border-top: #4aaaa5 solid 5px;
+  background: #666666;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+.copyright {
+  padding: 20px;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #dddddd;
+}
+.hover:hover {
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(74,170,75,.5);
+}
+@media (min-width:768px) {
+  .navbar>.container .navbar-brand {
+    margin-left:0;
+  }
+}
+@media screen and (max-width: 767px){
+  .navbar-collapse.collapse {
+    display: block!important;
+  }
+  .nav {
+    text-align: center;
+  }
+  .nav>li {
+    display: inline;
+  }
+  .nav>li>a {
+    display: inline;
+    line-height:20px;
+    padding: 50px 40px;
+  }
+}
